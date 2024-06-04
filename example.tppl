@@ -1,0 +1,27 @@
+helloWorld(int hello){
+
+    float hi = 10.1;
+    float* pointer = &hi;
+
+    if(hello < hi){
+        print("Hello World");
+    }else{
+        print("Hi World);
+    }
+
+    hi = Math.random(0, 100);
+
+    while(10 < 11){
+        print("randoming");
+    }
+
+    for(int i = 0; i < hi; i++){
+        print("hi");
+    }
+
+    let x = ask("enter number to guess:\n").continuous;
+
+    helloWorld(x);
+
+    return 0;
+}
