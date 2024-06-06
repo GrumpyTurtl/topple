@@ -1,7 +1,7 @@
 helloWorld(int hello){
 
     float hi = 10.1;
-    float* pointer = &hi;
+    float* pointer = hi;
 
     if(hello < hi){
         print("Hello World");
