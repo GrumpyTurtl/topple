@@ -1,4 +1,3 @@
-#include "lexer.hpp"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -13,7 +12,6 @@ enum TokenType
     OpenParen,
     CloseParen,
     BinaryOperator,
-    Let,
 };
 
 struct Token
@@ -22,12 +20,19 @@ struct Token
     TokenType type;
 };
 
-int tokenise(string Raw){
-    Vector<Token> tokens;
-    string line;
+void tokenised(fstream Raw){
+    cout << Raw;
+    string word;
 
     
-    while(getline(Raw, line)){
-        
+    while(Raw >> word){
+        cout << word << endl;
     }
+
+}
+
+int main(){
+    //need to parse the file in, 
+    
+    tokenised();
 }
